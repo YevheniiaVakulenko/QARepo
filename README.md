@@ -1,2 +1,2 @@
 # QARepo
-Homework №20 Repo by Yevheniia vakulenko
+Homework №20 Repo by Yevheniia Vakulenko
