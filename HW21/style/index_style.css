@@ -1,0 +1,37 @@
+#title{
+    text-align: center;
+    position: relative;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    font-size: 70px;
+    padding:10px;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 80%;
+    margin-left: 100px;
+}
+
+.image-content{
+    margin-left: 130px;
+    display: inline-block; 
+    position: relative; 
+    overflow: visible; 
+}
+
+.image-content img{
+    width: 350px;
+    height: 450px;
+    box-shadow: 0 0 8px 8px rgb(4, 1, 18, 0.7);
+}
+
+footer{
+    margin-left: 100px;
+}
+#credits{
+    text-align: center;
+}
