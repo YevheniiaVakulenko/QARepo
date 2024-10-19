@@ -2,93 +2,99 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/HW21/style/background.css">
+    <link rel="stylesheet" href="/HW21/style/menu.css">
+    <link rel="stylesheet" href="/HW21/style/contact_style.css">
     <title>Contact</title>
 </head>
 <body>
-    <header>
-        <h1>Contact</h1>
-        <details>
-            <summary>Menu</summary>
-            <nav>
-                <ul>
-                    <li><a href="/HW21/index.html">Main page</a></li>
-                    <li><a href="/HW21/pages/gallery.html">Gallery</a></li>
-                </ul>
-            </nav>
-        </details>
-    </header>
-    
-    <main>
-        <h2>Add a comment</h2>
-        <form action="" method="get" id="form1">
-            <h3>Impressions from the series:</h3>
-            <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea><br><br>
+    <div class="background">
+        <header>
+            <h1 id="title">Contact</h1>
+                <nav>
+                    <ul>
+                        <li><a href="/HW21/index.html">Main page</a></li>
+                        <li><a href="/HW21/pages/gallery.html">Gallery</a></li>
+                    </ul>
+                </nav>
+        </header>
+            <main>
+                <div class="container">
+                    <div class="content">
+                        <h2>Add a comment</h2>
+                        <form action="" method="get" id="form1">
+                            <h3>Impressions from the series:</h3>
+                            <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea><br><br>
 
-            <h3>Did you like the series?</h3>
-            <input type="radio" id="like_yes" name="like" value="yes">
-            <label for="like_yes">Yes</label><br>
-            <input type="radio" id="like_no" name="like" value="no">
-            <label for="like_no">No</label><br><br>
+                            <h3>Did you like the series?</h3>
+                            <input type="radio" id="like_yes" name="like" value="yes">
+                            <label for="like_yes">Yes</label><br>
+                            <input type="radio" id="like_no" name="like" value="no">
+                            <label for="like_no">No</label><br><br>
 
-            <h3>Genres you enjoy:</h3>
-            <input type="checkbox" id="action" name="genre" value="action">
-            <label for="action">Action</label><br>
-            <input type="checkbox" id="comedy" name="genre" value="comedy">
-            <label for="comedy">Comedy</label><br>
-            <input type="checkbox" id="drama" name="genre" value="drama">
-            <label for="drama">Drama</label><br><br>
+                            <h3>Genres you enjoy:</h3>
+                            <input type="checkbox" id="action" name="genre" value="action">
+                            <label for="action">Action</label><br>
+                            <input type="checkbox" id="comedy" name="genre" value="comedy">
+                            <label for="comedy">Comedy</label><br>
+                            <input type="checkbox" id="drama" name="genre" value="drama">
+                            <label for="drama">Drama</label><br><br>
 
-            <h3>Rate the series:</h3>
-            <label for="rating">Rating:</label>
-            <select id="rating" name="rating">
-                <option value="1">1 - Poor</option>
-                <option value="2">2 - Fair</option>
-                <option value="3">3 - Good</option>
-                <option value="4">4 - Very Good</option>
-                <option value="5">5 - Excellent</option>
-            </select><br><br>
+                            <h3>Rate the series:</h3>
+                            <label for="rating">Rating:</label>
+                            <select id="rating" name="rating">
+                                <option value="1">1 - Poor</option>
+                                <option value="2">2 - Fair</option>
+                                <option value="3">3 - Good</option>
+                                <option value="4">4 - Very Good</option>
+                                <option value="5">5 - Excellent</option>
+                            </select><br><br>
 
-            <input type="submit" value="Submit">
-          </form>
-          <p><label for="score">Your score</label>
-            <meter id="score" form="form1" name="score" min="0" low="40" high="90" max="100" value="87"></meter></p><br>
-            <h2>Contacts</h2>
-            <table>
-                <caption>Fake contacts</caption>
-                <thead>
-                    <tr>
-                        <th>Phone number</th>
-                        <th>Email</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>(123) 456-7890</td>
-                        <td>example@funmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>(987) 654-3210</td>
-                        <td>fake.email@noservice.com</td>
-                    </tr>
-                    <tr>
-                        <td>(555) 867-5309</td>
-                        <td>jenny@wontpickitup.com</td>
-                    </tr>
-                    <tr>
-                        <td>(404) 123-4567</td>
-                        <td>nowhere@error404.com</td>
-                    </tr>
-                    <tr>
-                        <td>(666) 123-9999</td>
-                        <td>noescape@scarymail.com</td>
-                    </tr>
-                </tbody>
-            </table>
-    </main>
-    
-    <footer>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.1069787909682!2d-81.5837732250512!3d28.416028693880477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e78117527adab1%3A0xc32f1cacf9deeebc!2sWalt%20Disney%20World!5e0!3m2!1suk!2suk!4v1729109855767!5m2!1suk!2suk" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p>© 2024 My Website. All rights reserved.</p>
-    </footer>
+                            <input type="submit" value="Submit" id="submit_btn">
+                        </form>
+                        <p><label for="score">Your score</label>
+                        <meter id="score" form="form1" name="score" min="0" low="40" high="90" max="100" value="87"></meter></p><br>
+                    </div>
+                    <div class="contact">
+                        <h2>Contacts</h2>
+                        <table>
+                            <caption>Fake contacts</caption>
+                            <thead>
+                                <tr>
+                                    <th>Phone number</th>
+                                    <th>Email</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>(123) 456-7890</td>
+                                    <td>example@funmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>(987) 654-3210</td>
+                                    <td>fake.email@noservice.com</td>
+                                </tr>
+                                <tr>
+                                    <td>(555) 867-5309</td>
+                                    <td>jenny@wontpickitup.com</td>
+                                </tr>
+                                <tr>
+                                    <td>(404) 123-4567</td>
+                                    <td>nowhere@error404.com</td>
+                                </tr>
+                                <tr>
+                                    <td>(666) 123-9999</td>
+                                    <td>noescape@scarymail.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.1069787909682!2d-81.5837732250512!3d28.416028693880477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e78117527adab1%3A0xc32f1cacf9deeebc!2sWalt%20Disney%20World!5e0!3m2!1suk!2suk!4v1729109855767!5m2!1suk!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </main>
+        <footer>   
+            <p id="credits">© 2024 My Website. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
