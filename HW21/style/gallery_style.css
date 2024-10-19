@@ -1,0 +1,61 @@
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    width:600px;
+    height:400px;
+}
+
+.carousel img {
+    flex: 1 0 30%;
+  }
+  @media (max-width: 600px) {
+    .carousel img {
+      flex: 1 0 90%;
+    }
+  }
+
+  .carousel::-webkit-scrollbar {
+    height: 8px;
+  }
+  .carousel::-webkit-scrollbar-thumb {
+    background: #29AB87;
+  }
+  .carousel::-webkit-scrollbar-track {
+    background: #b1b3b399;
+  }
+  .carousel::-webkit-scrollbar-track-piece:start {
+    background: #29AB87;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 180px;
+}
+
+.trailer{
+    width: 560px;
+    height:400px;
+    margin-bottom: 20px;
+}
+
+.trailer iframe {
+    display: block;
+    margin-bottom: 20px; 
+    width: 560px;
+    height:350px;
+}
+
+.trailer a {
+    display: block;
+    font-size: 20px;
+    color:rgb(255, 248, 221);
+    font-weight: bold;
+}
+
+.trailer a:hover {
+    color:rgb(254, 230, 131);
+}
